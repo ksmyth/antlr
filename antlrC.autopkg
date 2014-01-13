@@ -1,0 +1,26 @@
+nuget {
+    nuspec {
+        id = antlr;
+        version : 3.1.3;
+        title : ANTLR;
+        authors : "Terence Parr";
+        owners : ksmyth;
+        licenseUrl : "http://www.antlr3.org/license.html";
+        projectUrl: "http://www.antlr3.org/";
+        iconUrl: "https://www.nuget.org/Content/Images/packageDefaultIcon.png";
+        requireLicenseAcceptance:false;
+        summary: ANTLR C include files;
+
+        description: @"ANother Tool for Language Recognition, is a language tool that provides a framework for constructing recognizers, interpreters, compilers, and translators from grammatical descriptions containing actions in a variety of target languages.";
+        releaseNotes: "";
+        copyright: Copyright 2013;
+        tags: { native, cpp, antlr, parser };
+    }
+
+   files {
+      nestedInclude : {
+         #destination = ${d_include};
+         "runtime\C\include\*.h",
+      };
+   }
+}
