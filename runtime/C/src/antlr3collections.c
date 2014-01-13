@@ -1383,6 +1383,7 @@ ANTLR3_API pANTLR3_VECTOR_FACTORY
 antlr3VectorFactoryNew	    (ANTLR3_UINT32 sizeHint)
 {
 	pANTLR3_VECTOR_FACTORY  factory;
+	sizeHint;
 
 	// Allocate memory for the factory
 	//
